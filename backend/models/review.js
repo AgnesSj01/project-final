@@ -24,3 +24,6 @@ const reviewSchema = new mongoose.Schema({
     default: () => new Date(),
   },
 });
+
+const Review = mongoose.model("Review", reviewSchema);
+export default Review;
