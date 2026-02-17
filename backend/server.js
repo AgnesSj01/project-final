@@ -117,6 +117,21 @@ app.patch("/recipes/:id/heart", authenticateUser, async (req, res) => {
 app.use(userRoutes);
 app.use(favouriteRoutes);
 
+// Temporary seed endpoint
+import { readFileSync } from "fs";
+app.get("/seed", async (req, res) => {
+  try {
+    const data = JSON.parse(
+      readFileSync(new URL("./data/recipes.json", import.meta.url), "utf-8")
+    );
+    await Recipe.deleteMany();
+    const recipes = await Recipe.insertMany(data);
+    res.json({ message: `Seeded ${recipes.length} recipes` });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
