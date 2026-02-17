@@ -2,6 +2,32 @@
   "name": "project-final-parent",
   "version": "1.0.0",
   "scripts": {
-    "postinstall": "npm install --prefix backend"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "description": "Replace this readme with your own information about your project.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgnesSj01/project-final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AgnesSj01/project-final/issues"
+  },
+  "homepage": "https://github.com/AgnesSj01/project-final#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }

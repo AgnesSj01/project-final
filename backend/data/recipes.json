@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Asparagus Risotto",
+    "description": "A creamy Italian risotto with fresh spring asparagus, parmesan cheese and a hint of lemon.",
+    "ingredients": ["1 bunch asparagus", "1.5 cups arborio rice", "4 cups vegetable broth", "1 onion, diced", "2 cloves garlic", "0.5 cup parmesan cheese", "2 tbsp butter", "1 tbsp olive oil", "1 lemon, zested"],
+    "instructions": "Heat broth in a saucepan. Sauté onion and garlic in olive oil. Add rice and stir for 1 minute. Add broth one ladle at a time, stirring until absorbed. After 15 minutes, add chopped asparagus. Continue until rice is creamy. Stir in butter, parmesan and lemon zest.",
+    "season": "spring",
+    "imageUrl": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c1?w=800",
+    "diet": "vegetarian",
+    "allergies": ["lactose", "gluten"]
+  },
+  {
+    "title": "Spring Pea Soup",
+    "description": "A vibrant green soup made with fresh peas, mint and a touch of cream. Light and refreshing.",
+    "ingredients": ["500g fresh peas", "1 onion", "2 cloves garlic", "3 cups vegetable broth", "0.5 cup cream", "Fresh mint leaves", "Salt and pepper"],
+    "instructions": "Sauté onion and garlic until soft. Add peas and broth, bring to a boil. Simmer for 10 minutes. Blend until smooth. Stir in cream and chopped mint. Season with salt and pepper.",
+    "season": "spring",
+    "imageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800",
+    "diet": "vegetarian",
+    "allergies": ["lactose"]
+  },
+  {
+    "title": "Spinach and Radish Salad",
+    "description": "A fresh spring salad with baby spinach, crispy radishes, toasted seeds and a light vinaigrette.",
+    "ingredients": ["200g baby spinach", "8 radishes, sliced", "2 tbsp sunflower seeds", "1 avocado", "2 tbsp olive oil", "1 tbsp apple cider vinegar", "1 tsp honey", "Salt and pepper"],
+    "instructions": "Wash spinach and place in a bowl. Slice radishes thinly and add to the bowl. Dice avocado and add on top. Toast sunflower seeds in a dry pan. Whisk together olive oil, vinegar, honey, salt and pepper. Drizzle dressing over salad and top with seeds.",
+    "season": "spring",
+    "imageUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800",
+    "diet": "vegan",
+    "allergies": []
+  },
+  {
+    "title": "Rhubarb Crumble",
+    "description": "A classic sweet and tart rhubarb crumble with a buttery oat topping. Perfect spring dessert.",
+    "ingredients": ["500g rhubarb", "100g sugar", "150g flour", "100g butter", "80g oats", "50g brown sugar", "1 tsp cinnamon"],
+    "instructions": "Cut rhubarb into pieces, mix with sugar and place in a baking dish. Mix flour, oats, brown sugar and cinnamon. Rub in cold butter until crumbly. Spread topping over rhubarb. Bake at 190°C for 35 minutes until golden.",
+    "season": "spring",
+    "imageUrl": "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=800",
+    "diet": "vegetarian",
+    "allergies": ["gluten", "lactose"]
+  },
+  {
+    "title": "Asparagus and Goat Cheese Tart",
+    "description": "A flaky puff pastry tart topped with roasted asparagus and creamy goat cheese.",
+    "ingredients": ["1 sheet puff pastry", "1 bunch asparagus", "150g goat cheese", "1 egg", "2 tbsp olive oil", "Salt and pepper", "Fresh thyme"],
+    "instructions": "Roll out puff pastry on a baking sheet. Score a border 2cm from the edge. Spread goat cheese inside the border. Arrange asparagus on top. Drizzle with olive oil, season with salt, pepper and thyme. Brush border with beaten egg. Bake at 200°C for 20 minutes.",
+    "season": "spring",
+    "imageUrl": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=800",
+    "diet": "vegetarian",
+    "allergies": ["gluten", "lactose"]
+  },
+  {
+    "title": "Grilled Zucchini Pasta",
+    "description": "Light summer pasta with charred zucchini, cherry tomatoes, garlic and fresh basil.",
+    "ingredients": ["300g pasta", "2 zucchini", "200g cherry tomatoes", "3 cloves garlic", "Fresh basil", "3 tbsp olive oil", "50g parmesan", "Salt and pepper"],
+    "instructions": "Cook pasta. Slice zucchini lengthwise, brush with oil and grill until charred. Halve tomatoes. Sauté garlic in olive oil, add tomatoes and cook 3 minutes. Chop grilled zucchini, add to pan with pasta. Toss with basil and parmesan.",
+    "season": "summer",
+    "imageUrl": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800",
+    "diet": "vegetarian",
+    "allergies": ["gluten", "lactose"]
+  },
+  {
+    "title": "Strawberry Summer Salad",
+    "description": "A sweet and savory salad with fresh strawberries, mixed greens, walnuts and balsamic dressing.",
+    "ingredients": ["150g mixed greens", "200g strawberries", "50g walnuts", "100g feta cheese", "2 tbsp balsamic vinegar", "3 tbsp olive oil", "1 tsp honey", "Salt and pepper"],
+    "instructions": "Wash and dry greens. Slice strawberries. Toast walnuts in a dry pan. Whisk balsamic vinegar, olive oil, honey, salt and pepper. Arrange greens on plates, top with strawberries, crumbled feta and walnuts. Drizzle with dressing.",
+    "season": "summer",
+    "imageUrl": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=800",
+    "diet": "vegetarian",
+    "allergies": ["lactose"]
+  },
+  {
+    "title": "Gazpacho",
+    "description": "A chilled Spanish tomato soup, perfect for hot summer days. No cooking required.",
+    "ingredients": ["6 ripe tomatoes", "1 cucumber", "1 red pepper", "2 cloves garlic", "3 tbsp olive oil", "2 tbsp red wine vinegar", "Salt and pepper", "Fresh basil"],
+    "instructions": "Roughly chop tomatoes, cucumber and pepper. Add all ingredients to a blender. Blend until smooth. Season with salt, pepper and vinegar to taste. Chill in the fridge for at least 1 hour. Serve cold with a drizzle of olive oil and fresh basil.",
+    "season": "summer",
+    "imageUrl": "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?w=800",
+    "diet": "vegan",
+    "allergies": []
+  },
+  {
+    "title": "Cucumber Dill Tzatziki Bowl",
+    "description": "A refreshing Greek-inspired bowl with cucumber tzatziki, grilled chicken and warm pita.",
+    "ingredients": ["2 cucumbers", "200g Greek yogurt", "Fresh dill", "2 cloves garlic", "2 chicken breasts", "4 pita breads", "1 lemon", "Olive oil", "Salt and pepper"],
+    "instructions": "Grate cucumber and squeeze out water. Mix with yogurt, minced garlic, chopped dill, lemon juice, salt and pepper. Grill seasoned chicken breasts until cooked through. Warm pita breads. Slice chicken and serve in bowls with tzatziki and pita.",
+    "season": "summer",
+    "imageUrl": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800",
+    "diet": "none",
+    "allergies": ["lactose", "gluten"]
+  },
+  {
+    "title": "Tomato Bruschetta",
+    "description": "Classic Italian bruschetta with ripe summer tomatoes, fresh basil, garlic and good olive oil.",
+    "ingredients": ["4 ripe tomatoes", "1 baguette", "2 cloves garlic", "Fresh basil", "3 tbsp extra virgin olive oil", "1 tbsp balsamic vinegar", "Salt and pepper"],
+    "instructions": "Dice tomatoes and mix with chopped basil, olive oil, balsamic vinegar, salt and pepper. Let sit for 15 minutes. Slice baguette and toast until golden. Rub each slice with a cut garlic clove. Spoon tomato mixture on top. Serve immediately.",
+    "season": "summer",
+    "imageUrl": "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=800",
+    "diet": "vegan",
+    "allergies": ["gluten"]
+  },
+  {
+    "title": "Mushroom Risotto",
+    "description": "A rich and earthy autumn risotto with mixed wild mushrooms, thyme and parmesan.",
+    "ingredients": ["300g mixed mushrooms", "1.5 cups arborio rice", "4 cups vegetable broth", "1 onion", "3 cloves garlic", "0.5 cup white wine", "50g parmesan", "2 tbsp butter", "Fresh thyme"],
+    "instructions": "Sauté mushrooms in butter until golden, set aside. Sauté onion and garlic. Add rice, stir 1 minute. Add wine and stir until absorbed. Add broth one ladle at a time. When rice is creamy, stir in mushrooms, parmesan and thyme.",
+    "season": "autumn",
+    "imageUrl": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=800",
+    "diet": "vegetarian",
+    "allergies": ["lactose", "gluten"]
+  },
+  {
+    "title": "Pumpkin Soup",
+    "description": "A velvety smooth pumpkin soup with warming spices, perfect for chilly autumn evenings.",
+    "ingredients": ["1 kg pumpkin", "1 onion", "2 cloves garlic", "3 cups vegetable broth", "200ml coconut cream", "1 tsp cumin", "0.5 tsp nutmeg", "Salt and pepper", "Pumpkin seeds for topping"],
+    "instructions": "Peel and cube pumpkin. Sauté onion and garlic. Add pumpkin, broth and spices. Bring to a boil and simmer 20 minutes until pumpkin is tender. Blend until smooth. Stir in coconut cream. Serve topped with toasted pumpkin seeds.",
+    "season": "autumn",
+    "imageUrl": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=800",
+    "diet": "vegan",
+    "allergies": []
+  },
+  {
+    "title": "Apple Cinnamon Cake",
+    "description": "A moist and fragrant autumn cake loaded with fresh apples and warm cinnamon.",
+    "ingredients": ["3 apples", "200g flour", "150g sugar", "2 eggs", "100ml vegetable oil", "1 tsp baking powder", "2 tsp cinnamon", "1 tsp vanilla extract", "Pinch of salt"],
+    "instructions": "Peel and slice apples. Mix flour, baking powder, cinnamon and salt. Whisk eggs, sugar, oil and vanilla. Combine wet and dry ingredients. Fold in apple slices. Pour into a greased baking pan. Bake at 180°C for 40 minutes until golden.",
+    "season": "autumn",
+    "imageUrl": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?w=800",
+    "diet": "vegetarian",
+    "allergies": ["gluten"]
+  },
+  {
+    "title": "Roasted Squash with Feta",
+    "description": "Caramelized roasted butternut squash with crumbled feta, pomegranate seeds and herbs.",
+    "ingredients": ["1 butternut squash", "100g feta cheese", "50g pomegranate seeds", "2 tbsp olive oil", "1 tbsp maple syrup", "Fresh sage", "Salt and pepper"],
+    "instructions": "Peel and cube squash. Toss with olive oil, maple syrup, salt and pepper. Roast at 200°C for 30 minutes until caramelized. Transfer to a serving plate. Top with crumbled feta, pomegranate seeds and fresh sage leaves.",
+    "season": "autumn",
+    "imageUrl": "https://images.unsplash.com/photo-1508030448922-26db6e228a29?w=800",
+    "diet": "vegetarian",
+    "allergies": ["lactose"]
+  },
+  {
+    "title": "Plum Clafoutis",
+    "description": "A French baked custard dessert with sweet autumn plums. Simple and elegant.",
+    "ingredients": ["500g plums", "3 eggs", "100g sugar", "80g flour", "250ml milk", "1 tsp vanilla extract", "Butter for greasing", "Powdered sugar for dusting"],
+    "instructions": "Halve and pit plums. Butter a baking dish. Whisk eggs and sugar. Add flour, milk and vanilla, whisk until smooth. Pour a thin layer of batter in the dish. Arrange plums on top. Pour remaining batter over plums. Bake at 180°C for 35 minutes. Dust with powdered sugar.",
+    "season": "autumn",
+    "imageUrl": "https://images.unsplash.com/photo-1509461399763-ae67a981b254?w=800",
+    "diet": "vegetarian",
+    "allergies": ["gluten", "lactose"]
+  },
+  {
+    "title": "Kale and Potato Soup",
+    "description": "A hearty winter soup with curly kale, potatoes and a hint of garlic. Warming and nutritious.",
+    "ingredients": ["200g kale", "4 potatoes", "1 onion", "3 cloves garlic", "4 cups vegetable broth", "2 tbsp olive oil", "Salt and pepper", "Crusty bread for serving"],
+    "instructions": "Dice potatoes and onion. Sauté onion and garlic in olive oil. Add potatoes and broth, bring to a boil. Simmer 15 minutes until potatoes are tender. Roughly chop kale, add to soup. Cook 5 more minutes. Season with salt and pepper. Serve with crusty bread.",
+    "season": "winter",
+    "imageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800",
+    "diet": "vegan",
+    "allergies": []
+  },
+  {
+    "title": "Beef and Root Vegetable Stew",
+    "description": "A slow-cooked winter stew with tender beef, parsnips, carrots and beetroot.",
+    "ingredients": ["500g beef chuck", "2 parsnips", "3 carrots", "1 beetroot", "1 onion", "2 cloves garlic", "400ml beef broth", "200ml red wine", "2 tbsp flour", "Fresh rosemary", "Salt and pepper"],
+    "instructions": "Cut beef into chunks and coat with flour. Brown beef in a heavy pot. Add diced onion and garlic. Add chopped root vegetables, broth and wine. Add rosemary, salt and pepper. Bring to a boil, then simmer on low heat for 2 hours until beef is tender.",
+    "season": "winter",
+    "imageUrl": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=800",
+    "diet": "none",
+    "allergies": ["gluten"]
+  },
+  {
+    "title": "Cabbage Rolls",
+    "description": "Traditional Scandinavian cabbage rolls stuffed with pork, rice and spices. A winter classic.",
+    "ingredients": ["1 head cabbage", "400g ground pork", "100g cooked rice", "1 onion, grated", "1 egg", "200ml cream", "3 tbsp butter", "2 tbsp dark syrup", "Salt and pepper"],
+    "instructions": "Boil whole cabbage until leaves are soft. Mix pork, rice, grated onion, egg, salt and pepper. Place filling on each leaf and roll tightly. Brown rolls in butter. Place in a baking dish, pour cream and syrup over. Bake at 175°C for 1 hour.",
+    "season": "winter",
+    "imageUrl": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=800",
+    "diet": "none",
+    "allergies": ["lactose"]
+  },
+  {
+    "title": "Beetroot and Lentil Salad",
+    "description": "A warm winter salad with roasted beetroot, lentils, goat cheese and a balsamic glaze.",
+    "ingredients": ["3 beetroots", "200g green lentils", "100g goat cheese", "50g walnuts", "2 tbsp balsamic vinegar", "3 tbsp olive oil", "Fresh parsley", "Salt and pepper"],
+    "instructions": "Roast whole beetroots at 200°C for 45 minutes. Cook lentils according to package. Peel and cube beetroot. Toss lentils and beetroot with olive oil, balsamic vinegar, salt and pepper. Top with crumbled goat cheese, walnuts and parsley.",
+    "season": "winter",
+    "imageUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800",
+    "diet": "vegetarian",
+    "allergies": ["lactose"]
+  },
+  {
+    "title": "Turnip Gratin",
+    "description": "A creamy and golden baked turnip gratin with garlic, thyme and gruyère cheese.",
+    "ingredients": ["4 turnips", "200ml cream", "100ml milk", "100g gruyère cheese", "2 cloves garlic", "Fresh thyme", "1 tbsp butter", "Salt and pepper", "Pinch of nutmeg"],
+    "instructions": "Peel and thinly slice turnips. Mix cream, milk, minced garlic, nutmeg, salt and pepper. Layer turnip slices in a buttered baking dish, pouring cream mixture between layers. Top with grated gruyère and thyme. Bake at 180°C for 45 minutes until golden and bubbly.",
+    "season": "winter",
+    "imageUrl": "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?w=800",
+    "diet": "vegetarian",
+    "allergies": ["lactose"]
+  }
+]

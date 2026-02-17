@@ -1,0 +1,16 @@
+import mongoose from "mongoose";
+
+const favoriteSchema = new mongoose.Schema({
+  userId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+  },
+  recipeId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Recipe",
+  },
+});
+
+const Favorite = mongoose.model("Favorite", favoriteSchema);
+
+export default Favorite;
