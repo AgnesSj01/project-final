@@ -24,7 +24,7 @@ router.post("/users", async (req, res) => {
     await user.save();
 
     // Return user ID and token on successful registration
-    res.status(201).json({ id: user._id, accessToken: user.accessToken });
+    res.status(201).json({ id: user._id, accessToken: user.accessToken, name: user.name });
   } catch (err) {
     res
       .status(400)
@@ -39,7 +39,7 @@ router.post("/sessions", async (req, res) => {
 
     // Check if the user exists AND if the password is correct
     if (user && bcrypt.compareSync(req.body.password, user.password)) {
-      res.json({ userId: user._id, accessToken: user.accessToken });
+      res.json({ userId: user._id, accessToken: user.accessToken, name: user.name });
     } else {
       res.status(401).json({ message: "Invalid email or password" });
     }
