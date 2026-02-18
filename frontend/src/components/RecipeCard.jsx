@@ -2,13 +2,14 @@ import { AuthContext } from "../contexts/AuthContext.jsx";
 import { useContext, useEffect, useState } from "react";
 import { api } from "../utils/api";
 import { Link } from "react-router-dom";
+import Rating from "./Rating";
 
 const RecipeCard = ({
   recipe,
   showDelete = false,
   onDelete,
   isInitiallySaved = false,
-  onSavedChange, // 👈 valfritt: låt parent uppdatera savedSet
+  onSavedChange,
 }) => {
   const { isLoggedIn, accessToken } = useContext(AuthContext);
   const [isSaved, setIsSaved] = useState(isInitiallySaved);
@@ -51,6 +52,7 @@ const RecipeCard = ({
           e.target.src = "/images/food.png";
         }}
       />
+      <Rating recipeId={recipe._id} clickable={false} />
       <h4>{recipe.title}</h4>
       <p>{recipe.description}</p>
 

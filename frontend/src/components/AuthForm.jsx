@@ -17,7 +17,7 @@ export const AuthForm = ({ onSuccess, onClose }) => {
       const body = isRegister ? { name, email, password } : { email, password };
 
       const res = await api.post(url, body);
-      login(res.data.accessToken);
+      login(res.data.accessToken, res.data.name);
       onSuccess();
     } catch (err) {
       setError(

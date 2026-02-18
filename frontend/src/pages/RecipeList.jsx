@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext, useMemo } from "react";
+import { useState, useEffect, useContext, useMemo, useRef } from "react";
 import { api } from "../utils/api";
 import RecipeCard from "../components/RecipeCard";
 import { AuthContext } from "../contexts/AuthContext.jsx";
@@ -11,10 +11,19 @@ export const RecipeList = () => {
   const [selectedDiet, setSelectedDiet] = useState("all");
   const [selectedAllergy, setSelectedAllergy] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
+  const [sortBy, setSortBy] = useState("default");
+  const [ratingsMap, setRatingsMap] = useState({});
 
   const [savedSet, setSavedSet] = useState(new Set());
 
   const { isLoggedIn, accessToken } = useContext(AuthContext);
+
+  const searchRef = useRef(null);
+
+  // Auto-fokusera sökfältet när sidan laddas
+  useEffect(() => {
+    searchRef.current?.focus();
+  }, []);
 
   // Hämta recipes
   useEffect(() => {
@@ -49,6 +58,19 @@ export const RecipeList = () => {
       .catch((err) => console.error(err));
   }, [isLoggedIn, accessToken]);
 
+  useEffect(() => {
+    api
+      .get("/recipes/popular")
+      .then((res) => {
+        const map = {};
+        res.data.forEach((r) => {
+          map[r._id] = r.avgRating;
+        });
+        setRatingsMap(map);
+      })
+      .catch((err) => console.error(err));
+  }, []);
+
   // Filtrering
   const filteredRecipes = useMemo(() => {
     const filteredByDiet =
@@ -62,16 +84,28 @@ export const RecipeList = () => {
         : filteredByDiet.filter(
             (r) => r.allergies && !r.allergies.includes(selectedAllergy),
           );
-
-    return filteredByAllergy.filter((r) =>
+    const searched = filteredByAllergy.filter((r) =>
       r.title.toLowerCase().includes(searchQuery.toLowerCase()),
     );
-  }, [recipes, selectedDiet, selectedAllergy, searchQuery]);
+
+    if (sortBy === "popular") {
+      searched.sort(
+        (a, b) => (ratingsMap[b._id] || 0) - (ratingsMap[a._id] || 0),
+      );
+    } else if (sortBy === "least") {
+      searched.sort(
+        (a, b) => (ratingsMap[a._id] || 0) - (ratingsMap[b._id] || 0),
+      );
+    }
+
+    return searched;
+  }, [recipes, selectedDiet, selectedAllergy, searchQuery, sortBy, ratingsMap]);
 
   return (
     <div>
       <div className="search-bar">
         <input
+          ref={searchRef}
           className="search-input"
           type="text"
           placeholder="Search recipes..."
@@ -111,6 +145,15 @@ export const RecipeList = () => {
           <option value="all">No allergy filter</option>
           <option value="lactose">Lactose-free</option>
           <option value="gluten">Gluten-free</option>
+        </select>
+        <select
+          className="filter-button"
+          value={sortBy}
+          onChange={(e) => setSortBy(e.target.value)}
+        >
+          <option value="default">Sort by</option>
+          <option value="popular">Most popular</option>
+          <option value="least">Least popular</option>
         </select>
       </div>
 

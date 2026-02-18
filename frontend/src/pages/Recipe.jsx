@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import { api } from "../utils/api";
 import { AuthContext } from "../contexts/AuthContext";
+import Rating from "../components/Rating";
 
 //Enskilt recept med ingredienser, instruktioner, reviews
 export const Recipe = () => {
@@ -63,6 +64,7 @@ export const Recipe = () => {
 
         <h3>Instructions</h3>
         <p className="recipe-page-instructions">{recipe.instructions}</p>
+        <Rating recipeId={id} />
 
         {isLoggedIn && (
           <button

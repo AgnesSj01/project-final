@@ -5,7 +5,7 @@ import { AuthForm } from "./AuthForm";
 
 export const Header = () => {
   const [showAuth, setShowAuth] = useState(false);
-  const { isLoggedIn, logout } = useContext(AuthContext);
+  const { isLoggedIn, userName, logout } = useContext(AuthContext);
 
   const [isOpen, setIsOpen] = useState(false);
   const closeMenu = () => setIsOpen(false);
@@ -19,9 +19,12 @@ export const Header = () => {
   return (
     <>
       <nav className="nav-bar">
-        <Link to="/" onClick={closeMenu}>
-          <img src="/images/Kitchen.jpg" alt="Logo" className="nav-logo" />
-        </Link>
+        <div className="nav-left">
+          <Link to="/" onClick={closeMenu}>
+            <img src="/images/Kitchen.jpg" alt="Logo" className="nav-logo" />
+          </Link>
+          {isLoggedIn && userName && <span className="nav-greeting">Hej, {userName}!</span>}
+        </div>
 
         <button
           className="nav-burger"

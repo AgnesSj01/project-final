@@ -36,7 +36,7 @@ export const Favorites = () => {
     <div>
       <h2 className="Favorites-title">Here are your saved favorites!</h2>
       <div className="recipe-list">
-        {favorites.map((fav) => (
+        {favorites.filter((fav) => fav.recipeId).map((fav) => (
           <RecipeCard
             key={fav._id}
             recipe={fav.recipeId}
