@@ -33,13 +33,13 @@ export const Why = () => {
           <div className="season-grid">
             {seasonData.map((s) => (
               <div key={s.season} className="season-box">
-                <h3>{s.season}</h3>
+                <h2>{s.season}</h2>
                 <p className="season-months">{s.months}</p>
 
                 <div className="season-categories">
                   {s.categories.map((cat) => (
                     <div key={cat.label} className="season-category">
-                      <h4>{cat.label}</h4>
+                      <h3>{cat.label}</h3>
                       <ul>
                         {cat.items.map((item) => (
                           <li key={item}>{item}</li>
@@ -60,8 +60,9 @@ export const Why = () => {
               className="visit-link"
               href="https://www.naturskyddsforeningen.se/artiklar/valj-bland-frukt-och-gronsaker-i-sasong/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              Visit
+              Visit Naturskyddsföreningen
             </a>
           </div>
         </div>

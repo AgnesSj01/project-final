@@ -55,14 +55,14 @@ export const Recipe = () => {
         <p className="recipe-page-season">{recipe.season}</p>
         <p className="recipe-page-description">{recipe.description}</p>
 
-        <h3>Ingredients</h3>
+        <h2>Ingredients</h2>
         <ul className="recipe-page-ingredients">
           {recipe.ingredients.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
 
-        <h3>Instructions</h3>
+        <h2>Instructions</h2>
         <p className="recipe-page-instructions">{recipe.instructions}</p>
         <Rating recipeId={id} />
 

@@ -426,9 +426,10 @@ a:hover {
   transform: scale(1.03);
 }
 
-.home-card h3 {
-  color: #fc7824;
+.home-card h2 {
+  color: #b85300;
   margin-bottom: 0.2rem;
+  font-size: 1.2rem;
 }
 
 .home-card p {
@@ -468,9 +469,10 @@ a:hover {
   text-align: center;
 }
 
-.season-box h3 {
+.season-box h2 {
   color: #ffffff;
   margin-bottom: 15px;
+  font-size: 1.2rem;
 }
 
 .season-categories {
@@ -490,7 +492,7 @@ a:hover {
   flex: 1;
 }
 
-.season-category h4 {
+.season-category h3 {
   font-size: 14px;
   color: rgb(255, 255, 255);
 }
@@ -558,8 +560,9 @@ a:hover {
   flex-shrink: 0;
 }
 
-.about-card h3 {
+.about-card h2 {
   margin-bottom: 5px;
+  font-size: 1.2rem;
 }
 
 .why-row {
@@ -732,11 +735,11 @@ a:hover {
 
 .recipe-card img {
   width: 100%;
-  height: 220px;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
 }
 
-.recipe-card h4 {
+.recipe-card h3 {
   text-align: center;
   margin: 15px 15px 5px;
   font-size: 1.1rem;
@@ -811,7 +814,7 @@ a:hover {
 }
 
 .savebutton.saved {
-  background: #fc7824;
+  background: #b85300;
   color: white;
   border: 2px solid rgb(248, 243, 243);
 }
@@ -857,10 +860,11 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.recipe-page-content h3 {
+.recipe-page-content h2 {
   margin-bottom: 10px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px;
+  font-size: 1.2rem;
 }
 
 .recipe-page-ingredients {

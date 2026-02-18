@@ -1,6 +1,4 @@
 //Om oss
-import { useState } from "react";
-import { AuthForm } from "../components/AuthForm";
 
 export const AboutUs = () => {
   return (
@@ -28,11 +26,12 @@ export const AboutUs = () => {
             <div className="about-card">
               <img
                 src="/images/erik.jpg"
-                alt="Agnes"
+                alt="Erik"
                 className="about-card-img"
+                loading="lazy"
               />
               <div>
-                <h3>Erik</h3>
+                <h2>Erik</h2>
                 <p>
                   Erik has a background in environmental science and works as an
                   environmental specialist. He loves spending time in the
@@ -44,11 +43,12 @@ export const AboutUs = () => {
             <div className="about-card">
               <img
                 src="/images/agnes.jpg"
-                alt="Erik"
+                alt="Agnes"
                 className="about-card-img"
+                loading="lazy"
               />
               <div>
-                <h3>Agnes</h3>
+                <h2>Agnes</h2>
                 <p>
                   Agnes has a background as a social worker and is currently
                   studying web and digital service development. Unlike Erik, she

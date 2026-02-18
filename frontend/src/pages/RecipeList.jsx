@@ -117,6 +117,7 @@ export const RecipeList = () => {
       <div className="filters">
         <select
           className="filter-button"
+          aria-label="Filter by season"
           value={selectedSeason}
           onChange={(e) => setSelectedSeason(e.target.value)}
         >
@@ -129,6 +130,7 @@ export const RecipeList = () => {
 
         <select
           className="filter-button"
+          aria-label="Filter by diet"
           value={selectedDiet}
           onChange={(e) => setSelectedDiet(e.target.value)}
         >
@@ -139,6 +141,7 @@ export const RecipeList = () => {
 
         <select
           className="filter-button"
+          aria-label="Filter by allergy"
           value={selectedAllergy}
           onChange={(e) => setSelectedAllergy(e.target.value)}
         >
@@ -148,6 +151,7 @@ export const RecipeList = () => {
         </select>
         <select
           className="filter-button"
+          aria-label="Sort recipes"
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value)}
         >

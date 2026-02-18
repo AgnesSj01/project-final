@@ -53,7 +53,7 @@ const RecipeCard = ({
         }}
       />
       <Rating recipeId={recipe._id} clickable={false} />
-      <h4>{recipe.title}</h4>
+      <h3>{recipe.title}</h3>
       <p>{recipe.description}</p>
 
       {isLoggedIn && !showDelete && (
