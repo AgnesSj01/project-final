@@ -23,7 +23,9 @@ export const Header = () => {
           <Link to="/" onClick={closeMenu}>
             <img src="/images/Kitchen.jpg" alt="Logo" className="nav-logo" />
           </Link>
-          {isLoggedIn && userName && <span className="nav-greeting">Hej, {userName}!</span>}
+          {isLoggedIn && userName && (
+            <span className="nav-greeting">Hej, {userName}!</span>
+          )}
         </div>
 
         <button
@@ -55,7 +57,7 @@ export const Header = () => {
 
           {isLoggedIn && (
             <Link to="/favorites" onClick={closeMenu}>
-              Favorites
+              Saved Favorites
             </Link>
           )}
 
