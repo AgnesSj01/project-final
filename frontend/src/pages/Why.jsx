@@ -62,7 +62,7 @@ export const Why = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Visit Naturskyddsföreningen
+              Visit
             </a>
           </div>
         </div>

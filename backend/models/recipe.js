@@ -32,7 +32,7 @@ const recipeSchema = new mongoose.Schema({
     default: "none",
   },
   allergies: {
-    type: [String], // En array, t.ex. ["lactose", "gluten"]
+    type: [String],
     default: [],
   },
 });
