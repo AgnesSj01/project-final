@@ -6,7 +6,6 @@ import { AuthContext } from "../contexts/AuthContext.jsx";
 export const RecipeList = () => {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
-
   const [selectedSeason, setSelectedSeason] = useState("all");
   const [selectedDiet, setSelectedDiet] = useState("all");
   const [selectedAllergy, setSelectedAllergy] = useState("all");
@@ -161,7 +160,12 @@ export const RecipeList = () => {
         </select>
       </div>
 
-      {loading && <p>Loading recipes...</p>}
+      {loading && (
+        <div className="spinner-wrapper">
+          <p style={{ textAlign: "center", marginBottom: "12px" }}>Loading...</p>
+          <div className="spinner" />
+        </div>
+      )}
 
       <div className="recipe-list">
         {filteredRecipes.map((recipe) => (
