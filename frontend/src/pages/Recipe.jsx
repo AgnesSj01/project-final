@@ -4,7 +4,6 @@ import { api } from "../utils/api";
 import { AuthContext } from "../contexts/AuthContext";
 import Rating from "../components/Rating";
 
-//Enskilt recept med ingredienser, instruktioner, reviews
 export const Recipe = () => {
   const { isLoggedIn, accessToken } = useContext(AuthContext);
   const { id } = useParams();

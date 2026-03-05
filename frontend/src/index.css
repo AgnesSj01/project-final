@@ -18,6 +18,19 @@ body {
   min-height: 100vh;
 }
 
+/* Visually hidden but accessible to screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 h1 {
   font-size: 30px;
 }
@@ -152,6 +165,11 @@ a:hover {
 
 .nav-bar .nav-button:hover {
   transform: scale(1.05);
+}
+
+.nav-bar .nav-button:focus-visible {
+  outline: 2px solid #fc7824;
+  outline-offset: 3px;
 }
 
 /* Burger menu (mobile) */
@@ -370,7 +388,7 @@ a:hover {
   color: white;
   cursor: pointer;
   padding: 10px;
-  width: 180px;
+  width: 260px;
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
@@ -424,6 +442,14 @@ a:hover {
 .log-button:hover,
 .log-button2:hover {
   transform: scale(1.03);
+}
+
+.home-card:focus-visible,
+.visit-button:focus-visible,
+.log-button:focus-visible,
+.log-button2:focus-visible {
+  outline: 2px solid #b85300;
+  outline-offset: 3px;
 }
 
 .home-card h2 {
@@ -913,7 +939,8 @@ a:hover {
    14. FAVORITES PAGE
    ======================================== */
 
-.Favorites-title {
+.Favorites-title,
+.recipes-title {
   text-align: center;
   padding: 20px;
   margin-top: 20px;

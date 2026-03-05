@@ -29,10 +29,19 @@ const Rating = ({ recipeId, clickable = true }) => {
           {[1, 2, 3, 4, 5].map((star) => (
             <span
               key={star}
+              role="button"
+              tabIndex={0}
+              aria-label={`Rate ${star} out of 5 stars`}
               className={star <= userRating ? "star filled" : "star"}
               onClick={() => {
                 setUserRating(star);
                 submitRating(star);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  setUserRating(star);
+                  submitRating(star);
+                }
               }}
             >
               ★

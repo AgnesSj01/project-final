@@ -1,5 +1,3 @@
-//Info om hållbar mat
-
 import { seasonData } from "../data/seasonData";
 
 export const Why = () => {
@@ -62,7 +60,7 @@ export const Why = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Visit
+              Visit Naturskyddsföreningen
             </a>
           </div>
         </div>

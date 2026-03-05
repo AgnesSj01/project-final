@@ -39,7 +39,7 @@ export const RecipeList = () => {
       .finally(() => setLoading(false));
   }, [selectedSeason]);
 
-  // Hämta favourites när man är inloggad
+  // Fetch favourites when logged in
   useEffect(() => {
     if (!isLoggedIn || !accessToken) {
       setSavedSet(new Set());
@@ -102,11 +102,13 @@ export const RecipeList = () => {
 
   return (
     <div>
+      <h1 className="recipes-title">Recipes</h1>
       <div className="search-bar">
         <input
           ref={searchRef}
           className="search-input"
           type="text"
+          aria-label="Search recipes"
           placeholder="Search recipes..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
@@ -161,9 +163,9 @@ export const RecipeList = () => {
       </div>
 
       {loading && (
-        <div className="spinner-wrapper">
+        <div className="spinner-wrapper" role="status" aria-live="polite">
           <p style={{ textAlign: "center", marginBottom: "12px" }}>Loading...</p>
-          <div className="spinner" />
+          <div className="spinner" aria-hidden="true" />
         </div>
       )}
 

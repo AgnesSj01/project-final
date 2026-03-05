@@ -30,8 +30,8 @@ export const AuthForm = ({ onSuccess, onClose }) => {
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal" onClick={(e) => e.stopPropagation()}>
-        <button className="modal-close" onClick={onClose}>
+      <div className="modal" role="dialog" aria-modal="true" aria-label={isRegister ? "Register" : "Login"} onClick={(e) => e.stopPropagation()}>
+        <button className="modal-close" aria-label="Close modal" onClick={onClose}>
           ✕
         </button>
         <form onSubmit={handleSubmit}>
