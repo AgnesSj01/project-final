@@ -108,6 +108,7 @@ export const RecipeList = () => {
           ref={searchRef}
           className="search-input"
           type="text"
+          name="search"
           aria-label="Search recipes"
           placeholder="Search recipes..."
           value={searchQuery}
@@ -117,6 +118,7 @@ export const RecipeList = () => {
 
       <div className="filters">
         <select
+          name="season"
           className="filter-button"
           aria-label="Filter by season"
           value={selectedSeason}
@@ -130,6 +132,7 @@ export const RecipeList = () => {
         </select>
 
         <select
+          name="diet"
           className="filter-button"
           aria-label="Filter by diet"
           value={selectedDiet}
@@ -141,6 +144,7 @@ export const RecipeList = () => {
         </select>
 
         <select
+          name="allergy"
           className="filter-button"
           aria-label="Filter by allergy"
           value={selectedAllergy}
@@ -151,6 +155,7 @@ export const RecipeList = () => {
           <option value="gluten">Gluten-free</option>
         </select>
         <select
+          name="sort"
           className="filter-button"
           aria-label="Sort recipes"
           value={sortBy}

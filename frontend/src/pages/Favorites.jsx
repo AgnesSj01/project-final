@@ -88,6 +88,7 @@ export const Favorites = () => {
         <input
           className="search-input"
           type="text"
+          name="search"
           aria-label="Search saved recipes"
           placeholder="Search saved recipes..."
           value={searchQuery}
@@ -96,6 +97,7 @@ export const Favorites = () => {
       </div>
       <div className="filters">
         <select
+          name="season"
           className="filter-button"
           aria-label="Filter by season"
           value={selectedSeason}
@@ -109,6 +111,7 @@ export const Favorites = () => {
         </select>
 
         <select
+          name="diet"
           className="filter-button"
           aria-label="Filter by diet"
           value={selectedDiet}
@@ -120,6 +123,7 @@ export const Favorites = () => {
         </select>
 
         <select
+          name="allergy"
           className="filter-button"
           aria-label="Filter by allergy"
           value={selectedAllergy}

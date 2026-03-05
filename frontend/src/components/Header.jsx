@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState, useContext } from "react";
 import { AuthContext } from "../contexts/AuthContext.jsx";
 import { AuthForm } from "./AuthForm";
@@ -6,6 +6,7 @@ import { AuthForm } from "./AuthForm";
 export const Header = () => {
   const [showAuth, setShowAuth] = useState(false);
   const { isLoggedIn, userName, logout } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const [isOpen, setIsOpen] = useState(false);
   const closeMenu = () => setIsOpen(false);
@@ -14,6 +15,7 @@ export const Header = () => {
   const handleLogout = () => {
     logout();
     closeMenu();
+    navigate("/");
   };
 
   return (
