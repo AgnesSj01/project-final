@@ -766,6 +766,7 @@ a:hover {
   object-fit: cover;
 }
 
+.recipe-card h2,
 .recipe-card h3 {
   text-align: center;
   margin: 15px 15px 5px;

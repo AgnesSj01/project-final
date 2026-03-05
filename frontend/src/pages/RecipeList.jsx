@@ -3,6 +3,7 @@ import { api } from "../utils/api";
 import RecipeCard from "../components/RecipeCard";
 import { AuthContext } from "../contexts/AuthContext.jsx";
 
+// Lists all recipes with search, filter by season/diet/allergy, and sort by rating
 export const RecipeList = () => {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);

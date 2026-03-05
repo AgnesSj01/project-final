@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { api } from "../utils/api";
 
+// clickable=true shows interactive stars for rating, clickable=false shows average score only
 const Rating = ({ recipeId, clickable = true }) => {
   const [reviews, setReviews] = useState([]);
   const [userRating, setUserRating] = useState(0);

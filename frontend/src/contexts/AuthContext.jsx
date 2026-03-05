@@ -2,6 +2,7 @@ import { createContext, useState } from "react";
 
 export const AuthContext = createContext();
 
+// sessionStorage clears automatically when the browser tab is closed
 export const AuthProvider = ({ children }) => {
   const [accessToken, setAccessToken] = useState(
     sessionStorage.getItem("accessToken"),

@@ -1,5 +1,6 @@
 import { seasonData } from "../data/seasonData";
 
+// Page explaining sustainable eating, with seasonal food data and an external link
 export const Why = () => {
   return (
     <>

@@ -3,6 +3,7 @@ import { useState, useContext } from "react";
 import { AuthContext } from "../contexts/AuthContext.jsx";
 import { AuthForm } from "./AuthForm";
 
+// Responsive navbar with burger menu, login/logout, and greeting for logged-in users
 export const Header = () => {
   const [showAuth, setShowAuth] = useState(false);
   const { isLoggedIn, userName, logout } = useContext(AuthContext);

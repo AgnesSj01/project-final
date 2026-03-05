@@ -4,6 +4,7 @@ import { api } from "../utils/api";
 import { AuthContext } from "../contexts/AuthContext";
 import Rating from "../components/Rating";
 
+// Single recipe page – fetches recipe by ID from URL params and allows saving
 export const Recipe = () => {
   const { isLoggedIn, accessToken } = useContext(AuthContext);
   const { id } = useParams();
@@ -17,6 +18,7 @@ export const Recipe = () => {
       .catch((err) => console.error(err));
   }, [id]);
 
+  // Optimistic UI: update state immediately, revert if the API call fails
   const toggleSave = async () => {
     const next = !isSaved;
     setIsSaved(next);

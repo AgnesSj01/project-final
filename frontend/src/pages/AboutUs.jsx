@@ -1,5 +1,4 @@
-//Om oss
-
+// About us page presenting the team behind the project
 export const AboutUs = () => {
   return (
     <>

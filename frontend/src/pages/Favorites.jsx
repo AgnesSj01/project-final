@@ -3,6 +3,7 @@ import { AuthContext } from "../contexts/AuthContext.jsx";
 import { api } from "../utils/api";
 import RecipeCard from "../components/RecipeCard.jsx";
 
+// Shows the logged-in user's saved recipes with the same filters as RecipeList
 export const Favorites = () => {
   const [favorites, setFavorites] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");

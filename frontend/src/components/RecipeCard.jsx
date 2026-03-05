@@ -18,8 +18,8 @@ const RecipeCard = ({
     setIsSaved(isInitiallySaved);
   }, [isInitiallySaved]);
 
+  // Optimistic UI: update state immediately, revert if the API call fails
   const toggleSave = async () => {
-    // optimistic UI
     const next = !isSaved;
     setIsSaved(next);
     onSavedChange?.(recipe._id, next);

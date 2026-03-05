@@ -1,10 +1,10 @@
-//Startsida
 import { Link } from "react-router-dom";
 import { MdRestaurantMenu } from "react-icons/md";
 import { FaUserCircle } from "react-icons/fa";
 import { useState } from "react";
 import { AuthForm } from "../components/AuthForm";
 
+// Landing page with hero image and two call-to-action cards
 export const Home = () => {
   const [showAuth, setShowAuth] = useState(false);
 

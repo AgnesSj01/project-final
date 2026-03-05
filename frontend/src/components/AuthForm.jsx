@@ -2,6 +2,8 @@ import React, { useState, useContext } from "react";
 import { api } from "../utils/api";
 import { AuthContext } from "../contexts/AuthContext";
 
+// Modal form that handles both login and registration
+// isRegister toggles between the two modes
 export const AuthForm = ({ onSuccess, onClose }) => {
   const [isRegister, setIsRegister] = useState(false);
   const [name, setName] = useState("");
@@ -10,6 +12,7 @@ export const AuthForm = ({ onSuccess, onClose }) => {
   const [error, setError] = useState("");
   const { login } = useContext(AuthContext);
 
+  // Sends to /users (register) or /sessions (login) based on current mode
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
