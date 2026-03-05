@@ -4,24 +4,24 @@ export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [accessToken, setAccessToken] = useState(
-    localStorage.getItem("accessToken"),
+    sessionStorage.getItem("accessToken"),
   );
   const [userName, setUserName] = useState(
-    localStorage.getItem("userName"),
+    sessionStorage.getItem("userName"),
   );
 
   const isLoggedIn = !!accessToken;
 
   const login = (token, name) => {
-    localStorage.setItem("accessToken", token);
-    localStorage.setItem("userName", name);
+    sessionStorage.setItem("accessToken", token);
+    sessionStorage.setItem("userName", name);
     setAccessToken(token);
     setUserName(name);
   };
 
   const logout = () => {
-    localStorage.removeItem("accessToken");
-    localStorage.removeItem("userName");
+    sessionStorage.removeItem("accessToken");
+    sessionStorage.removeItem("userName");
     setAccessToken(null);
     setUserName(null);
   };

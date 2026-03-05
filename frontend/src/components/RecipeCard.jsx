@@ -27,16 +27,15 @@ const RecipeCard = ({
     try {
       if (next) {
         await api.post(`/favourites/${recipe._id}`, null, {
-          headers: { Authorization: accessToken }, // ev: Bearer
+          headers: { Authorization: accessToken },
         });
       } else {
         await api.delete(`/favourites/${recipe._id}`, {
-          headers: { Authorization: accessToken }, // ev: Bearer
+          headers: { Authorization: accessToken },
         });
       }
     } catch (err) {
       console.error(err);
-      // backa om det failar
       setIsSaved(!next);
       onSavedChange?.(recipe._id, !next);
     }
@@ -48,12 +47,13 @@ const RecipeCard = ({
       <img
         src={recipe.imageUrl || "/images/food.png"}
         alt={recipe.title}
+        loading="lazy"
         onError={(e) => {
           e.target.src = "/images/food.png";
         }}
       />
       <Rating recipeId={recipe._id} clickable={false} />
-      <h3>{recipe.title}</h3>
+      <h2>{recipe.title}</h2>
       <p>{recipe.description}</p>
 
       {isLoggedIn && !showDelete && (
